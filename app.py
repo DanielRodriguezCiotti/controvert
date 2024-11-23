@@ -39,7 +39,7 @@ with tab1:
         color_discrete_sequence=px.colors.sequential.Reds.reverse(),
         labels={"min_perf_diff_2_months": "Impact boursier sur 2 mois(%)", "activity": "Secteur d'activité"},
     )
-    activity_financial_fig.update_layout(title="Impact boursier minimal sur 2 mois par secteur d'activité")
+    activity_financial_fig.update_layout(title="Impact boursier sur 2 mois par secteur d'activité")
     st.plotly_chart(activity_financial_fig, use_container_width=True)
 
 

@@ -1,11 +1,9 @@
-import ast
+
 from datetime import datetime
 import streamlit as st
-import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from src.backend.backend import sectors_list, driver, get_data_for_risk_repartition, get_data_nb_controverties_distrib, get_data_financial_impact_by_controversy_per_sector, get_articles_for_sector_controversy, get_nb_controversies_per_activity
-import json
 st.set_page_config(layout="wide")
 session = driver.session()
 

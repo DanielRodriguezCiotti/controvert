@@ -62,7 +62,7 @@ with tab2:
     col1, col2 = st.columns(2)
 
     with col1:
-        st.subheader("Nombre d'articles par secteur")
+        st.subheader("Proportion du nombre d'articles par risque")
         if data_pie_chart is not None and not data_pie_chart.empty:
             # Count the number of articles per risk for the selected sector
             data_pie_chart.rename(columns={"controversy_name": "Risk", "number_of_articles": "Article Count"}, inplace=True)
@@ -82,7 +82,7 @@ with tab2:
             st.write("No articles available for the selected sector.")
 
     with col2:
-        st.subheader("Proportion du nombre d'articles par secteur")
+        st.subheader("Nombre d'articles par secteur")
         sector_counts = data_bar_chart
         sector_counts.columns = ["Sector", "Count"]
 
